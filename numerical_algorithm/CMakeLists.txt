@@ -26,3 +26,6 @@ add_executable(fast_fourier_trans_test
 add_executable(total_pivoting_gaussian_elimination_test
         total_pivoting_gaussian_elimination_test.cpp
         total_pivoting_gaussian_elimination.h)
+
+add_executable(gauss-Jordan-elimination-test Gauss-jordan-Elimination-test.cpp Gauss-Jordan-Elimination.h)
+add_executable(symmetric_positive_definite_test symmetric_positive_definite_test.cpp symmetric_positive_definite.h)
