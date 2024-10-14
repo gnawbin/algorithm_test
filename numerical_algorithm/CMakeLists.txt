@@ -12,7 +12,12 @@ set(CMAKE_CXX_STANDARD 20)
 add_executable(MatrixMulti MatrixMultiTest.cpp
         Complex.h
         MatrixMulti.h)]]
-#add_executable(fourier_series_test fourier_series_test.cpp)
+add_executable(fourier_series_test fourier_series_test.cpp
+
+)
+add_executable( fast_walsh_series_test
+        fast_walsh_series_test.cpp
+)
 #[[
 add_executable(fast_fourier_trans_test
         fast_fourier_trans_test.cpp
@@ -26,6 +31,6 @@ add_executable(fast_fourier_trans_test
 add_executable(total_pivoting_gaussian_elimination_test
         total_pivoting_gaussian_elimination_test.cpp
         total_pivoting_gaussian_elimination.h)
-
+add_executable(trench_toeplitz_inv_test trench_toeplitz_inv_test.cpp)
 add_executable(gauss-Jordan-elimination-test Gauss-jordan-Elimination-test.cpp Gauss-Jordan-Elimination.h)
 add_executable(symmetric_positive_definite_test symmetric_positive_definite_test.cpp symmetric_positive_definite.h)
