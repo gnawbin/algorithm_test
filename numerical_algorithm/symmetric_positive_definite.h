@@ -7,6 +7,9 @@
 #include <cmath>
 #include <iostream>
 #include "Complex.h"
+/**
+ *堆成正定矩阵的求逆
+ */
 using namespace std;
 double ffabs(double p) {
     double q;

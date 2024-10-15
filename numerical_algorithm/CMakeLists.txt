@@ -18,6 +18,12 @@ add_executable(fourier_series_test fourier_series_test.cpp
 add_executable( fast_walsh_series_test
         fast_walsh_series_test.cpp
 )
+add_executable( 5_3_smoothing_formula_test
+        5_3_smoothing_formula_test.cpp
+)
+add_executable( evaluation_of_determinants_test
+        evaluation_of_determinants_test.cpp
+)
 #[[
 add_executable(fast_fourier_trans_test
         fast_fourier_trans_test.cpp
