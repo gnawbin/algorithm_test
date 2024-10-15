@@ -24,6 +24,12 @@ add_executable( 5_3_smoothing_formula_test
 add_executable( evaluation_of_determinants_test
         evaluation_of_determinants_test.cpp
 )
+add_executable( rank_of_matrix_test
+        rank_of_matrix_test.cpp
+)
+add_executable(cholesky_decompositionmethod_test
+        cholesky_decompositionmethod_test.cpp
+)
 #[[
 add_executable(fast_fourier_trans_test
         fast_fourier_trans_test.cpp
@@ -40,3 +46,9 @@ add_executable(total_pivoting_gaussian_elimination_test
 add_executable(trench_toeplitz_inv_test trench_toeplitz_inv_test.cpp)
 add_executable(gauss-Jordan-elimination-test Gauss-jordan-Elimination-test.cpp Gauss-Jordan-Elimination.h)
 add_executable(symmetric_positive_definite_test symmetric_positive_definite_test.cpp symmetric_positive_definite.h)
+add_executable(triangular_decomposition_of_matrices_test
+        triangular_decomposition_of_matrices_test.cpp
+)
+add_executable(household_transformation_qr_decomposition_test
+        household_transformation_qr_decomposition_test.cpp
+)
