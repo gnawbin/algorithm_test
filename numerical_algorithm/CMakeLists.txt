@@ -64,4 +64,6 @@ add_executable(gamma_test
 add_executable(ingamma_test
         ingamma_test.cpp
 )
+add_executable(generalized_inverse_matrix_of_singular_matrix_test generalized_inverse_matrix_of_singular_matrix_test.cpp)
 add_executable(singular_value_decomposition_test singular_value_decomposition_test.cpp)
+add_executable(Poly_test Poly_test.cpp)
