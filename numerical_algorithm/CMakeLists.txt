@@ -52,3 +52,16 @@ add_executable(triangular_decomposition_of_matrices_test
 add_executable(household_transformation_qr_decomposition_test
         household_transformation_qr_decomposition_test.cpp
 )
+add_executable(kalman_filtering_test
+        kalman_filtering_test.cpp
+)
+add_executable(  A_B_G_filtering_test
+        A_B_G_filtering_test.cpp
+)
+add_executable(gamma_test
+        gamma_test.cpp
+)
+add_executable(ingamma_test
+        ingamma_test.cpp
+)
+add_executable(singular_value_decomposition_test singular_value_decomposition_test.cpp)

@@ -7,3 +7,4 @@ set(CMAKE_CXX_STANDARD 20)
         MatrixMulti.h)]]
 
 add_subdirectory(numerical_algorithm)
+add_subdirectory(merkle_tree)
