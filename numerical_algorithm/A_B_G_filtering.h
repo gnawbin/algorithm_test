@@ -7,6 +7,7 @@
 #include <cmath>
 #include <iostream>
 using namespace std;
+//a-b-c滤波
 //int n 量测数据的点数
 //n         量测数据点数。
 //x[n]      n个等间隔点上的量测值。

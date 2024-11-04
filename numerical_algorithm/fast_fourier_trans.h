@@ -5,6 +5,7 @@
 #ifndef FAST_FOURIER_TRANS_H
 #define FAST_FOURIER_TRANS_H
 /**
+ *快速沃什变换
 *int n 采样点数
 *int k 满足 n=2的k次阶乘
 *double pr[n] 当flag=0时,存放n个采样输入的实部,返回离散傅里叶变换的模;当flag=1时，

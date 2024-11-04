@@ -7,6 +7,7 @@
 #include <cmath>
 #include <iostream>
 using namespace std;
+//傅里叶级数逼近
 //n  等据点数为2n+1
 //f[2n+1] 存放区间[0,2*3.141592]内的2n+1个等距点处的函数值
 //a[n+1] 返回Fourier级数中的系数

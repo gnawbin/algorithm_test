@@ -4,15 +4,15 @@
 
 #ifndef EIGENVECTOR_CORRESPONDING_TO_THE_MAXIMUM_EIGENVALUE_OF_POWER_H
 #define EIGENVECTOR_CORRESPONDING_TO_THE_MAXIMUM_EIGENVALUE_OF_POWER_H
-//ä¹˜å¹‚æ³•,æ±‚ä¸€èˆ¬å®žçŸ©é˜µç»å¯¹å€¼æœ€å¤§çš„å®žç‰¹å¾å€¼åŠå…¶ç›¸åº”çš„çš„ç‰¹å¾å‘é‡.cpp
+//³ËÃÝ·¨,ÇóÒ»°ãÊµ¾ØÕó¾ø¶ÔÖµ×î´óµÄÊµÌØÕ÷Öµ¼°ÆäÏàÓ¦µÄµÄÌØÕ÷ÏòÁ¿.cpp
   #include <cmath>
   #include <iostream>
   using namespace std;
-//a[n][n]        å®žçŸ©é˜µ
-//eps            ç²¾åº¦è¦æ±‚
-//v[n]           ç‰¹å¾å‘é‡
-//å‡½æ•°è¿”å›žç»å¯¹å€¼æœ€å¤§çš„ç‰¹å¾å€¼ã€‚
-//åœ¨æœ¬å‡½æ•°ç¨‹åºè¿”å›žæ—¶å°†æ˜¾ç¤ºè¿­ä»£æ¬¡æ•°ã€‚æœ¬ç¨‹åºæœ€å¤šè¿­ä»£1000æ¬¡ã€‚
+//a[n][n]        Êµ¾ØÕó
+//eps            ¾«¶ÈÒªÇó
+//v[n]           ÌØÕ÷ÏòÁ¿
+//º¯Êý·µ»Ø¾ø¶ÔÖµ×î´óµÄÌØÕ÷Öµ¡£
+//ÔÚ±¾º¯Êý³ÌÐò·µ»ØÊ±½«ÏÔÊ¾µü´ú´ÎÊý¡£±¾³ÌÐò×î¶àµü´ú1000´Î¡£
 double power(int n, double a[], double eps, double v[])
 {
     int i, j, k, flag = 1, iteration;
@@ -22,14 +22,14 @@ double power(int n, double a[], double eps, double v[])
     do
     {
         iteration++;
-        for (i=0; i<n; i++)       //è®¡ç®—u=Av
+        for (i=0; i<n; i++)       //¼ÆËãu=Av
         {
             sum = 0.0;
             for (j=0; j<n; j++)
             { sum = sum + a[i*n+j]*v[j]; }
             u[i] = sum;
         }
-        d = 0.0;            //è®¡ç®—å‘é‡çš„èŒƒæ•°
+        d = 0.0;            //¼ÆËãÏòÁ¿µÄ·¶Êý
         for (k=0; k<n; k++)  d = d+u[k]*u[k];
         d = sqrt(d);
         for (i=0; i<n; i++)
@@ -48,7 +48,7 @@ double power(int n, double a[], double eps, double v[])
         if (iteration >= 1000) flag = 0;
     } while (flag == 1);
     lambda = f*d;
-    cout <<"è¿­ä»£æ¬¡æ•° = " <<iteration <<endl;
+    cout <<"µü´ú´ÎÊý = " <<iteration <<endl;
     delete[] u;
     return(lambda);
 }
